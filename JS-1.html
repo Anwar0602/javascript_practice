@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Javascript Mi2</title>
+</head>
+<body>
+<h1>Javascript has started his journey</h1>
+
+<!--
+<a href="#" onclick = "alert('Ere hunray ni');"><h2>Clicks</h2></a>
+<a href="#" onmouseover = "alert('kita oise');"><h2>Answer</h2></a>
+<a href="#" onmouseout = "alert('mato te');"><h2>Clicks</h2></a>
+
+<!--
+<input type="text" onkeyup="alert(this.value);">
+-->
+<!--Calculator-->
+<div id = "M1">
+
+</div>
+<div id = "M2">
+
+</div>
+<div id = "M3">
+
+</div>
+<div id = "M4">
+
+</div>
+<div id = "M5">
+
+</div>
+<!--Calculator-->
+
+<!--Function Calculator-->
+<p id="demo"></p>
+<!--Function Calculator-->
+
+<script type = "text/Javascript">
+var fname, phone, address;
+document.write("<h1>Sadia</h1>");
+
+// document write::::
+fname= "Mithu";
+address= "Sylhet";
+phone= "0193949553";
+document.write(fname);
+document.write("<br/>");
+document.write(address);
+document.write("<br/>");
+document.write(phone);
+// document write
+
+// variable::::
+var firstnum = 30;
+var secondnum = 20;
+
+var result1 = firstnum + secondnum;
+var result2 = firstnum - secondnum;
+var result3 = firstnum * secondnum;
+var result4 = firstnum / secondnum;
+var result5 = firstnum % secondnum;
+
+document.getElementById("M1").innerHTML=result1;
+document.getElementById("M2").innerHTML=result2;
+document.getElementById("M3").innerHTML=result3;
+document.getElementById("M4").innerHTML=result4;
+document.getElementById("M5").innerHTML=result5;
+
+
+// variable
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+//datatype::::
+
+var name1 = "Mithu";
+var name2 = "Nishat";
+var float = 1.5;
+var a = true;
+document.write("<br/>");
+document.write(typeof(a));
+
+var x = {firstName:"John", lastName:"Doe"};
+var y = ["John","Doe","sakib", "lenovo", "Nokia"];
+
+document.write("<br/>");
+document.write(x.firstName);
+
+document.write("<br/>");
+document.write(y[4]);
+
+document.write("<br/>");
+document.write("<b> The type is: </b> ");
+document.write(typeof(name1));
+
+document.write("<br/>");
+document.write(" The type is: " + typeof(firstnum));
+
+document.write("<br/>");
+document.write(" The type is: " + typeof(float));
+
+document.write("<br/>");
+document.write(" The type is: " + typeof(x));
+
+document.write("<br/>");
+document.write(" The type is: " + typeof(y));
+
+//datatype
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+//function:::::
+
+    function weblink(changename, address, job) {
+            document.write("My name is " + changename + "<br/>");
+            document.write("I live in " + address +"<br/>");
+            document.write("I do " + job +"<br/>");
+    }
+    weblink("Nishat", "Sylhet", "Freelancing");
+    weblink("Mithu", "Detmold", "Webdesign");
+
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+     
+     
+     function add(a,b) {
+         var t = a;
+         var v = b;
+         document.write(a+b);
+     }
+     function sub(a,b) {
+        var result = a-b;
+         return result;
+     }
+     function multi(a,b) {
+         var t = a;
+         var v = b;
+         document.write(a*b);
+     }
+     function div(a,b) {
+         var t = a;
+         var v = b;
+         document.write(a/b);
+     }
+     function mod(a,b) {
+         var t = a;
+         var v = b;
+         document.write(a%b);
+     }
+     document.write("The addition is: ")
+     add(100,40);
+     document.write("<br/>");
+     document.write("The substraction is: " + sub(1000,40));
+    
+     document.write("<br/>");
+     document.write("The multiplication is: ")
+     multi(100,40);
+     document.write("<br/>");
+     document.write("The division is: ")
+     div(100,40);
+     document.write("<br/>");
+     document.write("The modulus is: ")
+     mod(100,40);
+//function
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+//object:::::::
+
+     var mymobile = {name: "Samsung", model: "A50", price: "24500 Taka", owner: "Mithu"};
+     document.write("<br/>");
+     document.write(mymobile.name + "<br/>" + mymobile.model + "<br/>" + mymobile.price + "<br/>" + mymobile.owner);
+//object
+document.write("<br/>");
+document.write("<br/>");
+document.write("<br/>");
+//object + function:::::::::
+
+     function mobilename(){
+         return "Xiaomi China"
+     }
+var mymobile = {name: mobilename(), model: "Note 4A", price: "50500 Taka", owner: "Mithu"};
+     document.write("<br/>");
+     document.write(mymobile.name + "<br/>" + mymobile.model + "<br/>" + mymobile.price);
+
+//object + function
+</script>
+    </body>

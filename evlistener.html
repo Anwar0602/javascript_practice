@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <div id="demo">
+        <h1>MY Name Is Khan</h1>
+    </div>
+    <div id="lekho">
+        <p>My Calculator</p>
+    </div>
+    <style>
+        #lekho {
+            fontsize: 20px;
+            display: none;
+            color: white;
+        }
+        #box1{
+            background: violet;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+
+            color: white;
+            font-size: 60px;
+            margin-top: 50px;
+            transition: all 1s;
+            opacity: 0;
+        }
+        .showNow{
+            opacity: 1 !important;
+        }
+        .hideNow{
+            opacity: 0 !important;
+        }
+        #box1 .digit{
+            background: red;
+    
+            width: 200px;
+            height: 30px;
+
+            color: white;
+        
+            margin-top: 50px;
+            transition: all 1s;
+        }
+        #box1 .digit .writing{
+            background: blue;
+            text-align: center;
+        
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+
+    <button onclick="showall()" id="clickbtn1"> Show </button>
+    <button onclick="hideall()" id="clickbtn2"> Hide </button>
+    
+
+    <div id="box1">
+        <div class="digit"><p class="writing">Mithu</p></div>
+        <div class="digit"><p class="writing">Yamin</p></div>
+
+        <div class="digit"><p class="writing">Sanwar</p></div>
+
+        <div class="digit"><p class="writing">Monjur</p></div>
+
+    </div>
+    <script src="evli.js"></script>
+</body>
+</html>

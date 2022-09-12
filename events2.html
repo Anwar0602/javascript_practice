@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Part 2</title>
+</head>
+<body>
+    <h1>Events Part 2</h1>
+    <style>
+        #box1{
+            background: violet;
+            text-align: center;
+            width: 400px;
+            line-height: 200px;
+            color: white;
+            font-size: 60px;
+            margin-top: 50px;
+            transition: all 1s;
+        }
+        #box2{
+            background: orange;
+            text-align: center;
+            width: 400px;
+            line-height: 200px;
+            color: white;
+            font-size: 60px;
+            margin-top: 50px;
+            transition: all 1s;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+    </style>
+
+    <div id="button">
+        <button id="clickbtn1">Click 360 rotation</button>
+        <button id="clickbtn2">Click -360 rotation</button>
+        <button id="clickbtn3">Change Color</button>
+    </div>
+    <div id="box1">Hello Mithu</div>
+    <br/>
+    <div id="button">
+        <button id="show">Show Bar</button>
+        <button id="hide">Hide Bar</button>
+        <button id="sidebarshow">sidebar Show</button>
+        <button id="sidebarhide">sidebar Hide</button>
+    </div>
+    <div id="box2">Mobile Menu</div>
+    <script src="events2.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events Part 1</title>
+    </head>
+<body>
+
+<h1>Events Part 1</h1>
+
+<div id="addtext"> </div>
+
+<button onclick = "ShowHello()">Turn on</button>
+
+<button onclick = "alert('nothing')">Turn off</button>
+
+<button onmouseover = "alert('Disgusting')">Over Mouse</button>
+
+<button onmouseout = "alert('Mouse out')">Mouse Out</button>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+<button onmouseover="document.getElementById('demo').innerHTML=null">Close</button>
+<div id="demo">
+</div>
+
+<Script>
+function ShowHello(){
+    return alert ("Change the World!!");
+}
+</Script>
+
+</body>
+</html>

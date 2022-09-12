@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID-CLASS ADD</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"></head>
+<body>
+    <style>
+        
+        #demo{
+            background: #ddd;
+            width: 250px;
+            text-align:center;
+            padding:20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+        .mymenu{
+            
+        } 
+
+       .showmenu{
+            display: block !important;
+            animation-name: menuAnimation !important;
+            animation-duration: 1s !important;
+            transform-origin: top !important;
+        }
+        @keyframes menuAnimation{
+            from{opacity:0; transform: scaleY(0) ;}
+            to{opacity:1 ; transform: scaleY(1);}
+        }
+
+        #barmenu{
+            font-size: 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+            background: red;
+            border: none;
+        }
+    </style>
+
+    <button id="barmenu"> <i class="fas fa-bars"></i></button>
+
+    <div id="demo" class="mymenu">
+        <h1>I am Anwar</h1>
+        <p>I want to be a professional Web designer.</p>
+    </div>
+    <script src="idadd.js"></script>
+</body>
+</html>
